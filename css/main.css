@@ -1,0 +1,23 @@
+body {
+	color: #FFF;
+	color: var(--color-primary-text);
+	background-color: #344955;
+	background-color: var(--color-primary);
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.container > a {
+	flex: 0 0 30%;
+}
