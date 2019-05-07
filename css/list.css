@@ -38,7 +38,12 @@
 	overflow: visible;
 }
 
-.list li::before {
+.list li a {
+	display: flex;
+	align-items: center;
+}
+
+.list li a::before {
 	background-color: #000;
 	background-color: var(--color-secondary);
 	opacity: 0;
@@ -55,17 +60,12 @@
 	backface-visibility: hidden;
 }
 
-.list li:hover::before {
+.list li a:hover::before {
 	opacity: 0.2;
 }
 
-.list li:active::before {
+.list li a:active::before {
 	opacity: 0.4;
-}
-
-.list li a {
-	display: flex;
-	align-items: center;
 }
 
 .list .thumbnail {
