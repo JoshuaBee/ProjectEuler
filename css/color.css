@@ -7,8 +7,8 @@ body {
 	/*
 		Primary Color
 	*/
-	--color-primary: #344955;
-	--color-primary-text: #FFF;
+	--color-primary: #F9AA33;
+	--color-primary-text: #000;
 	--color-primary-dark: #0B222C;
 	--color-primary-dark--text: #FFF;
 	--color-primary-light: #5F7481;
@@ -17,14 +17,14 @@ body {
 	/*
 		Secondary Color
 	*/
-	--color-secondary: #F9AA33;
-	--color-secondary-text: #000;
+	--color-secondary: #000;
+	--color-secondary-text: #F9AA33;
 	
 	/*
 		Background
 	*/
-	--color-background: #FFF;
-	--color-background-text: #000;
+	--color-background: #344955;
+	--color-background-text: #FFF;
 	--color-surface: #FFF;
 	--color-surface-text: #000;
 	--color-error: #B00020;
