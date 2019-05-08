@@ -1,5 +1,5 @@
-const version = "1.02";
-const cacheName = "jw-${version}";
+const version = "1.00";
+const cacheName = "ProjectEuler-${version}";
 
 self.addEventListener("install", e => {
 	e.waitUntil(
