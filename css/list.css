@@ -90,10 +90,11 @@
 .list .title {
 	line-height: 1.75em;
 	font-size: 1em;
+	font-weight: bold;
 }
 
 .list .secondary {
 	line-height: 1.25em;
 	font-size: .875em;
-	opacity: 0.5;
+	opacity: 0.8;
 }
