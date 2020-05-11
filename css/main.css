@@ -9,3 +9,15 @@ body {
 	justify-content: center;
 	flex-direction: column;
 }
+
+iframe {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 63vw;
+}
+
+@media only screen and (max-device-width: 480px) {
+	iframe {
+		width: 90vw;
+	}
+}

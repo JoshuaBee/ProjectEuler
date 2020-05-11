@@ -1,24 +1,24 @@
 /*--------------------------------//
 //                                //
-//              List              //
+//              Grid              //
 //                                //
 //--------------------------------*/
-.list {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 20vw);
+	grid-gap: 1vw;
 	
 	margin-top: 2em;
-	cursor: pointer;
+	margin-bottom: 2em;
+}
+
+.grid .grid-item {
+	height: 4.5em;
 	
 	background-color: #F9AA33;
 	background-color: var(--color-primary);
 	color: #000;
 	color: var(--color-primary-text);
-}
-
-.list li {
-	height: 4.5em;
 	
 	box-sizing: border-box;
 	position: relative;
@@ -34,16 +34,16 @@
 	white-space: nowrap;
 	text-decoration: none;
 	vertical-align: baseline;
-	min-width: 4em;
+	min-width: 18em;
 	overflow: visible;
 }
 
-.list li a {
+.grid .grid-item a {
 	display: flex;
 	align-items: center;
 }
 
-.list li a::before {
+.grid .grid-item a::before {
 	background-color: #000;
 	background-color: var(--color-secondary);
 	opacity: 0;
@@ -60,15 +60,15 @@
 	backface-visibility: hidden;
 }
 
-.list li a:hover::before {
+.grid .grid-item a:hover::before {
 	opacity: 0.2;
 }
 
-.list li a:active::before {
+.grid .grid-item a:active::before {
 	opacity: 0.4;
 }
 
-.list .thumbnail {
+.grid .thumbnail {
 	width: 2.5em;
 	height: 2.5em;
 	display: block;
@@ -81,20 +81,38 @@
 	line-height: 2.5em;
 }
 
-.list .item-text {
+.grid .item-text {
 	display: flex;
 	flex-direction: column;
 	padding-right: 1em;
 }
 
-.list .title {
+.grid .title {
 	line-height: 1.75em;
 	font-size: 1em;
 	font-weight: bold;
 }
 
-.list .secondary {
+.grid .secondary {
 	line-height: 1.25em;
 	font-size: .875em;
 	opacity: 0.8;
+}
+
+@media only screen and (max-device-width: 1500px) {
+	.grid {
+		grid-template-columns: repeat(2, 30vw);
+	}
+}
+
+@media only screen and (max-device-width: 1000px) {
+	.grid {
+		grid-template-columns: 60vw;
+	}
+}
+
+@media only screen and (max-device-width: 480px) {
+	.grid {
+		grid-template-columns: 90vw;
+	}
 }

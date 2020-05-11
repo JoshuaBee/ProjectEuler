@@ -1,0 +1,22 @@
+/*--------------------------------//
+//                                //
+//             Header             //
+//                                //
+//--------------------------------*/
+header {
+	margin-top: 2em;
+	width: 63vw;
+	color: #FFF;
+	color: var(--color-background-text);
+	justify-content: space-between;
+}
+
+header .subtitle {
+	margin-top: 2em;
+}
+
+@media only screen and (max-device-width: 480px) {
+	header {
+		width: 90vw;
+	}
+}
