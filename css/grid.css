@@ -5,7 +5,7 @@
 //--------------------------------*/
 .grid {
 	display: grid;
-	grid-template-columns: repeat(3, 20vw);
+	grid-template-columns: 90vw;
 	grid-gap: 1vw;
 	
 	margin-top: 2em;
@@ -15,7 +15,7 @@
 .grid .grid-item {
 	height: 4.5em;
 	
-	background-color: #F9AA33;
+	background-color: #FFAA1C;
 	background-color: var(--color-primary);
 	color: #000;
 	color: var(--color-primary-text);
@@ -69,10 +69,10 @@
 }
 
 .grid .grid-item.incomplete {
-	color: #FFF !important;
-	color: var(--color-error-text) !important;
-	background-color: #B00020 !important;
-	background-color: var(--color-error) !important;
+	color: #FFF;
+	color: var(--color-error-text);
+	background-color: #8D052D;
+	background-color: var(--color-error);
 	cursor: not-allowed;
 }
 
@@ -83,7 +83,7 @@
 	margin: 1em;
 	background-color: #000;
 	background-color: var(--color-secondary);
-	color: #FFF;
+	color: #FFAA1C;
 	color: var(--color-secondary-text);
 	text-align: center;
 	line-height: 2.5em;
@@ -107,20 +107,37 @@
 	opacity: 0.8;
 }
 
-@media only screen and (max-device-width: 1500px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 	.grid {
-		grid-template-columns: repeat(2, 30vw);
+		grid-template-columns: 90vw;
 	}
 }
 
-@media only screen and (max-device-width: 1000px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.grid {
+		grid-template-columns: 80vw;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.grid {
 		grid-template-columns: 60vw;
 	}
 }
 
-@media only screen and (max-device-width: 480px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.grid {
-		grid-template-columns: 90vw;
+		grid-template-columns: repeat(2, 30vw);
+	}
+}
+
+/* Extra extra large devices (extra large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+	.grid {
+		grid-template-columns: repeat(3, 20vw);
 	}
 }

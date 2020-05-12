@@ -1,7 +1,7 @@
 body {
 	color: #FFF;
 	color: var(--color-background-text);
-	background-color: #344955;
+	background-color: #2F3D57;
 	background-color: var(--color-background);
 	
 	display: flex;

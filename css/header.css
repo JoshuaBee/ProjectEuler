@@ -5,7 +5,7 @@
 //--------------------------------*/
 header {
 	margin-top: 2em;
-	width: 63vw;
+	width: 62vw;
 	color: #FFF;
 	color: var(--color-background-text);
 	justify-content: space-between;
@@ -15,8 +15,37 @@ header .subtitle {
 	margin-top: 2em;
 }
 
-@media only screen and (max-device-width: 480px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 	header {
 		width: 90vw;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	header {
+		width: 80vw;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	header {
+		width: 60vw;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	header {
+		width: 61vw;
+	}
+}
+
+/* Extra extra large devices (extra large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+	header {
+		width: 62vw;
 	}
 }
