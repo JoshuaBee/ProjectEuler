@@ -68,7 +68,15 @@
 	opacity: 0.4;
 }
 
-.grid .thumbnail {
+.grid .grid-item.incomplete {
+	color: #FFF !important;
+	color: var(--color-error-text) !important;
+	background-color: #B00020 !important;
+	background-color: var(--color-error) !important;
+	cursor: not-allowed;
+}
+
+.grid .grid-item .thumbnail {
 	width: 2.5em;
 	height: 2.5em;
 	display: block;

@@ -1,7 +1,7 @@
 {
   "short_name": "PE",
   "name": "Project Euler",
-  "description": "Project Euler Collection",
+  "description": "Collection of Project Euler puzzles",
   "icons": [
 	{
 	  "src": "images/logo/logo-192.png",
