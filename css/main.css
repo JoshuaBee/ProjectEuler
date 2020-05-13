@@ -3,21 +3,48 @@ body {
 	color: var(--color-background-text);
 	background-color: #2F3D57;
 	background-color: var(--color-background);
-	
+
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.left {
+	margin: 2em auto 0 auto;
+}
+
+.left .button {
+	display: none;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: calc(5% - 1vw) 90vw calc(5% - 1vw);
+	grid-gap: 1vw;
+
+	position: relative;
+	min-height: 100%;
 }
 
 iframe {
 	margin-top: 2em;
 	margin-bottom: 2em;
-	width: 63vw;
 }
 
-@media only screen and (max-device-width: 480px) {
-	iframe {
-		width: 90vw;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.content {
+		grid-template-columns: calc(10% - 1vw) 80% calc(10% - 1vw);
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.content {
+		grid-template-columns: calc(20% - 1vw) 60% calc(20% - 1vw);
+	}
+	
+	.left .button {
+		display: block;
 	}
 }
