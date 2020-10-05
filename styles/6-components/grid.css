@@ -11,7 +11,7 @@
 	margin-bottom: 2em;
 }
 
-.grid .grid-item {
+.grid__item {
 	height: 4.5em;
 	
 	background-color: #FFAA1C;
@@ -37,12 +37,12 @@
 	overflow: visible;
 }
 
-.grid .grid-item a {
+.grid__item a {
 	display: flex;
 	align-items: center;
 }
 
-.grid .grid-item a::before {
+.grid__item a::before {
 	background-color: #000;
 	background-color: var(--color-secondary);
 	opacity: 0;
@@ -59,15 +59,15 @@
 	backface-visibility: hidden;
 }
 
-.grid .grid-item a:hover::before {
+.grid__item a:hover::before {
 	opacity: 0.2;
 }
 
-.grid .grid-item a:active::before {
+.grid__item a:active::before {
 	opacity: 0.4;
 }
 
-.grid .grid-item.incomplete {
+.grid__item.incomplete {
 	color: #FFF;
 	color: var(--color-error-text);
 	background-color: #8D052D;
@@ -75,7 +75,7 @@
 	cursor: not-allowed;
 }
 
-.grid .grid-item .thumbnail {
+.grid__item-thumbnail {
 	width: 2.5em;
 	height: 2.5em;
 	display: block;
@@ -88,19 +88,19 @@
 	line-height: 2.5em;
 }
 
-.grid .item-text {
+.grid__item-text {
 	display: flex;
 	flex-direction: column;
 	padding-right: 1em;
 }
 
-.grid .title {
+.grid__item-title {
 	line-height: 1.75em;
 	font-size: 1em;
-	font-weight: bold;
+	font-weight: 700;
 }
 
-.grid .secondary {
+.grid__item-subtitle {
 	line-height: 1.25em;
 	font-size: .875em;
 	opacity: 0.8;
