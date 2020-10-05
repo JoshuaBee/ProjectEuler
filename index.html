@@ -7,27 +7,29 @@
 		<meta name="description" content="Project Euler Collection" />
 		<!-- Let browser know website is optimized for mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="icon" type="image/png" href="images/logo/logo-192.png" />
-		<link rel="canonical" href="https://joshuabee.github.io/ProjectEuler" />
+		<link rel="icon" type="image/png" href="images/logos/logo-192.png" />
+		<link rel="canonical" href="https://euler.joshuabee.dev/" />
 
 		<!-- Progressive Web App -->
 		<meta name="theme-color" content="#FFAA1C" />
 		<link rel="manifest" href="manifest.json" />
 
-		<!-- CSS Reset -->
-		<link href="css/reset.css" rel="stylesheet" />
-		<!-- Color CSS -->
-		<link href="css/color.css" rel="stylesheet" />
-		<!-- Font CSS -->
-		<link href="css/font.css" rel="stylesheet" />
-		<!-- Main CSS -->
-		<link href="css/main.css" rel="stylesheet" />
-		<!-- Header CSS -->
-		<link href="css/header.css" rel="stylesheet" />
-		<!-- Footer CSS -->
-		<link href="css/footer.css" rel="stylesheet" />
-		<!-- Grid CSS -->
-		<link href="css/grid.css" rel="stylesheet" />
+		<!-- Settings -->
+		<link href="styles/1-settings/color.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- Generic -->
+		<link href="styles/3-generic/reset.css" rel="stylesheet" />
+
+		<!-- Elements -->
+		<link href="styles/4-elements/body.css" rel="stylesheet" />
+		
+		<!-- Components -->
+		<link href="styles/6-components/button.css" rel="stylesheet" />
+		<link href="styles/6-components/content.css" rel="stylesheet" />
+		<link href="styles/6-components/footer.css" rel="stylesheet" />
+		<link href="styles/6-components/grid.css" rel="stylesheet" />
+		<link href="styles/6-components/header.css" rel="stylesheet" />
 	</head>
 
 	<body>
@@ -35,242 +37,262 @@
 			<div class="left"></div>
 
 			<div class="center">
-				<header>
-					<h1 class="title h1">Project Euler</h1>
-					<p class="subtitle subtitle1">Whenever I learn a new programming language, I found the best way was to launch myself in the deep end and answer Project Euler puzzles. These are mathematical problems that can be solved with programming. Here is my collection of Python solutions:</p>
+				<header class="header">
+					<h1 class="header__title">Project Euler</h1>
+					<div class="header__subtitle">
+						<p>Whenever I learn a new programming language, I found the best way was to launch myself in the deep end and answer Project Euler puzzles. These are mathematical problems that can be solved with programming. Here is my collection of Python solutions:</p>
+					</div>
 				</header>
 						
 				<nav class="grid">
-					<div class="grid-item">
+					<div class="grid__item">
 						<a href="1/">
-							<span class="thumbnail">1</span>
-							<div class="item-text">
-								<span class="title">Problem 1</span>
-								<span class="secondary">Multiples of 3 and 5</span>
+							<span class="grid__item-thumbnail">1</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 1</span>
+								<span class="grid__item-subtitle">Multiples of 3 and 5</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item">
+					</div><!-- grid__item -->
+					<div class="grid__item">
 						<a href="2/">
-							<span class="thumbnail">2</span>
-							<div class="item-text">
-								<span class="title">Problem 2</span>
-								<span class="secondary">Even Fibonacci numbers</span>
+							<span class="grid__item-thumbnail">2</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 2</span>
+								<span class="grid__item-subtitle">Even Fibonacci numbers</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item">
+					</div><!-- grid__item -->
+					<div class="grid__item">
 						<a href="3/">
-							<span class="thumbnail">3</span>
-							<div class="item-text">
-								<span class="title">Problem 3</span>
-								<span class="secondary">Largest prime factor</span>
+							<span class="grid__item-thumbnail">3</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 3</span>
+								<span class="grid__item-subtitle">Largest prime factor</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item">
+					</div><!-- grid__item -->
+					<div class="grid__item">
 						<a href="4/">
-							<span class="thumbnail">4</span>
-							<div class="item-text">
-								<span class="title">Problem 4</span>
-								<span class="secondary">Largest palindrome product</span>
+							<span class="grid__item-thumbnail">4</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 4</span>
+								<span class="grid__item-subtitle">Largest palindrome product</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item">
+					</div><!-- grid__item -->
+					<div class="grid__item">
 						<a href="5/">
-							<span class="thumbnail">5</span>
-							<div class="item-text">
-								<span class="title">Problem 5</span>
-								<span class="secondary">Smallest multiple</span>
+							<span class="grid__item-thumbnail">5</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 5</span>
+								<span class="grid__item-subtitle">Smallest multiple</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item">
+					</div><!-- grid__item -->
+					<div class="grid__item">
 						<a href="6/">
-							<span class="thumbnail">6</span>
-							<div class="item-text">
-								<span class="title">Problem 6</span>
-								<span class="secondary">Sum square difference</span>
+							<span class="grid__item-thumbnail">6</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 6</span>
+								<span class="grid__item-subtitle">Sum square difference</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">7</span>
-							<div class="item-text">
-								<span class="title">Problem 7</span>
-								<span class="secondary">10001st prime</span>
+							<span class="grid__item-thumbnail">7</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 7</span>
+								<span class="grid__item-subtitle">10001st prime</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">8</span>
-							<div class="item-text">
-								<span class="title">Problem 8</span>
-								<span class="secondary">Largest product in a series</span>
+							<span class="grid__item-thumbnail">8</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 8</span>
+								<span class="grid__item-subtitle">Largest product in a series</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">9</span>
-							<div class="item-text">
-								<span class="title">Problem 9</span>
-								<span class="secondary">Special Pythagorean triplet</span>
+							<span class="grid__item-thumbnail">9</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 9</span>
+								<span class="grid__item-subtitle">Special Pythagorean triplet</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">10</span>
-							<div class="item-text">
-								<span class="title">Problem 10</span>
-								<span class="secondary">Summation of primes</span>
+							<span class="grid__item-thumbnail">10</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 10</span>
+								<span class="grid__item-subtitle">Summation of primes</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">11</span>
-							<div class="item-text">
-								<span class="title">Problem 11</span>
-								<span class="secondary">Largest product in a grid</span>
+							<span class="grid__item-thumbnail">11</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 11</span>
+								<span class="grid__item-subtitle">Largest product in a grid</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">12</span>
-							<div class="item-text">
-								<span class="title">Problem 12</span>
-								<span class="secondary">Highly divisible triangular number</span>
+							<span class="grid__item-thumbnail">12</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 12</span>
+								<span class="grid__item-subtitle">Highly divisible triangular number</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">13</span>
-							<div class="item-text">
-								<span class="title">Problem 13</span>
-								<span class="secondary">Large sum</span>
+							<span class="grid__item-thumbnail">13</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 13</span>
+								<span class="grid__item-subtitle">Large sum</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">14</span>
-							<div class="item-text">
-								<span class="title">Problem 14</span>
-								<span class="secondary">Longest Collatz sequence</span>
+							<span class="grid__item-thumbnail">14</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 14</span>
+								<span class="grid__item-subtitle">Longest Collatz sequence</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">15</span>
-							<div class="item-text">
-								<span class="title">Problem 15</span>
-								<span class="secondary">Lattice paths</span>
+							<span class="grid__item-thumbnail">15</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 15</span>
+								<span class="grid__item-subtitle">Lattice paths</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">16</span>
-							<div class="item-text">
-								<span class="title">Problem 16</span>
-								<span class="secondary">Power digit sum</span>
+							<span class="grid__item-thumbnail">16</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 16</span>
+								<span class="grid__item-subtitle">Power digit sum</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">17</span>
-							<div class="item-text">
-								<span class="title">Problem 17</span>
-								<span class="secondary">Number letter counts</span>
+							<span class="grid__item-thumbnail">17</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 17</span>
+								<span class="grid__item-subtitle">Number letter counts</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">18</span>
-							<div class="item-text">
-								<span class="title">Problem 18</span>
-								<span class="secondary">Maximum path sum I</span>
+							<span class="grid__item-thumbnail">18</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 18</span>
+								<span class="grid__item-subtitle">Maximum path sum I</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">19</span>
-							<div class="item-text">
-								<span class="title">Problem 19</span>
-								<span class="secondary">Counting Sundays</span>
+							<span class="grid__item-thumbnail">19</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 19</span>
+								<span class="grid__item-subtitle">Counting Sundays</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">20</span>
-							<div class="item-text">
-								<span class="title">Problem 20</span>
-								<span class="secondary">Factorial digit sum</span>
+							<span class="grid__item-thumbnail">20</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 20</span>
+								<span class="grid__item-subtitle">Factorial digit sum</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">21</span>
-							<div class="item-text">
-								<span class="title">Problem 21</span>
-								<span class="secondary">Amicable numbers</span>
+							<span class="grid__item-thumbnail">21</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 21</span>
+								<span class="grid__item-subtitle">Amicable numbers</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">22</span>
-							<div class="item-text">
-								<span class="title">Problem 22</span>
-								<span class="secondary">Names scores</span>
+							<span class="grid__item-thumbnail">22</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 22</span>
+								<span class="grid__item-subtitle">Names scores</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">23</span>
-							<div class="item-text">
-								<span class="title">Problem 23</span>
-								<span class="secondary">Non-abundant sums</span>
+							<span class="grid__item-thumbnail">23</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 23</span>
+								<span class="grid__item-subtitle">Non-abundant sums</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
-					<div class="grid-item incomplete">
+					</div><!-- grid__item -->
+					<div class="grid__item incomplete">
 						<a>
-							<span class="thumbnail">24</span>
-							<div class="item-text">
-								<span class="title">Problem 24</span>
-								<span class="secondary">Lexicographic permutations</span>
+							<span class="grid__item-thumbnail">24</span>
+							<div class="grid__item-text">
+								<span class="grid__item-title">Problem 24</span>
+								<span class="grid__item-subtitle">Lexicographic permutations</span>
 							</div>
 						</a>
-					</div><!-- grid-item -->
+					</div><!-- grid__item -->
 				</nav><!-- grid -->
 			</div>
 
 			<div class="right"></div>
 		</div>
 		
-		<footer>
-			<a href="https://joshuabee.github.io" target="_blank" rel="noopener noreferrer" class="company" itemscope itemtype="https://schema.org/WebSite">
+		<footer class="footer">
+			<a href="https://joshuabee.dev/" target="_blank" rel="noopener noreferrer" class="footer__branding" itemscope itemtype="https://schema.org/WebSite">
 				<picture>
-					<source srcset="images/logo/company-logo-192.svg" type="image/svg+xml">
-					<img src="images/logo/company-logo-192.png" class="company-logo" alt="Company Logo" />
+					<source srcset="images/logos/company-logo-192.svg" type="image/svg+xml">
+					<img src="images/logos/company-logo-192.png" class="footer__logo" alt="Company Logo" />
 				</picture>
-				<span class="company-name subtitle1">Joshua<br />Bee</span>
+				<span class="footer__title">Joshua<br />Bee</span>
 			</a>
+
+			<button id="install" type="button" class="button" aria-hidden="true">
+				<span class="button__text">Install</span>
+			</button>
 		</footer>
+
+		<!-- Main Javascript -->
+		<script src="scripts/main.js"></script>
+		<script>
+			if ('serviceWorker' in navigator) {
+			  navigator.serviceWorker.register('/service-worker.js')
+			  .then(function(registration) {
+				console.log('Service worker registration successful, scope is:', registration.scope);
+			  })
+			  .catch(function(error) {
+				console.log('Service worker registration failed, error:', error);
+			  });
+			}
+		</script>
 	</body>
 </html>

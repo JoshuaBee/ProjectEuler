@@ -3,13 +3,24 @@
 //             Header             //
 //                                //
 //--------------------------------*/
-header {
+.header {
 	margin-top: 2em;
 	color: #FFF;
 	color: var(--color-background-text);
 	justify-content: space-between;
 }
 
-header .subtitle {
+.header__title {
+	font-size: 6rem;
+	line-height: 6rem;
+	letter-spacing: -0.09375rem;
+	font-weight: 400;
+}
+
+.header__subtitle {
 	margin-top: 2em;
+	font-size: 1rem;
+	line-height: 1.75rem;
+	letter-spacing: 0.009375rem;
+	font-weight: 400;
 }
