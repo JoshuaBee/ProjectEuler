@@ -9,10 +9,6 @@
 	*/
 	--color-primary: #FFAA1C;
 	--color-primary-text: #000;
-	--color-primary-dark: #0B222C;
-	--color-primary-dark--text: #FFF;
-	--color-primary-light: #5F7481;
-	--color-primary-light-text: #000;
 	
 	/*
 		Secondary Color
@@ -23,10 +19,18 @@
 	/*
 		Background
 	*/
-	--color-background: #2F3D57;
-	--color-background-text: #FFF;
-	--color-surface: #FFF;
-	--color-surface-text: #000;
+	--color-background: #E8FFFF;
+	--color-background-text: #2F3D57;
 	--color-error: #8D052D;
 	--color-error-text: #FFF;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/*
+			Background
+		*/
+		--color-background: #2F3D57;
+		--color-background-text: #FFF;
+	}
 }
