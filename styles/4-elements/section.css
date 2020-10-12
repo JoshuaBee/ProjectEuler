@@ -1,0 +1,10 @@
+section {
+	margin-top: 2em;
+}
+
+.section__title {
+	font-size: 3.75rem;
+	line-height: 3.75rem;
+	letter-spacing: -0.03125rem;
+	font-weight: 400;
+}

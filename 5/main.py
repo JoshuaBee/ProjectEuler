@@ -4,7 +4,7 @@ t = time.time() # Start time
 
 # Imports
 import math
-from primes import *
+from primes import primesByValue
 
 # Variables
 n = 20 # Max divisor
@@ -12,7 +12,7 @@ r = 1 # Result
 m = 0 # Local factor count
 max = 0 # Global factor count
 
-p = primes(n) # Generate primes up to n
+p = primesByValue(n) # Generate primes up to n
 
 # Loop over all the primes up to n
 for i in p:

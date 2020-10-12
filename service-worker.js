@@ -1,4 +1,4 @@
-const version = "1.00";
+const version = "1.01";
 const cacheName = "jb-${version}";
 
 self.addEventListener("install", e => {
@@ -16,6 +16,7 @@ self.addEventListener("install", e => {
 				"/4/index.html",
 				"/5/index.html",
 				"/6/index.html",
+				"/7/index.html",
 				"/images/icons/arrow-back-24.svg",
 				"/images/logos/company-logo-192.png",
 				"/images/logos/company-logo-192.svg",
@@ -30,6 +31,7 @@ self.addEventListener("install", e => {
 				"/styles/3-generic/reset.css",
 				"/styles/4-elements/body.css",
 				"/styles/4-elements/iframe.css",
+				"/styles/4-elements/section.css",
 				"/styles/6-components/button.css",
 				"/styles/6-components/content.css",
 				"/styles/6-components/footer.css",
