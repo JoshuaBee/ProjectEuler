@@ -18,6 +18,14 @@ self.addEventListener("install", e => {
 				"/6/index.html",
 				"/7/index.html",
 				"/8/index.html",
+				"/9/index.html",
+				"/10/index.html",
+				"/11/index.html",
+				"/12/index.html",
+				"/13/index.html",
+				"/14/index.html",
+				"/15/index.html",
+				"/16/index.html",
 				"/images/icons/arrow-back-24.svg",
 				"/images/logos/company-logo-192.png",
 				"/images/logos/company-logo-192.svg",
@@ -38,6 +46,7 @@ self.addEventListener("install", e => {
 				"/styles/6-components/footer.css",
 				"/styles/6-components/grid.css",
 				"/styles/6-components/header.css",
+				"/styles/7-utilities/color.css",
 				"/styles/7-utilities/text-alignment.css"
 			])
 			.then(() => self.skipWaiting());

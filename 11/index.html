@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
+		<link rel="preconnect" href="https://font.gstatic.com/" crossorigin>
+
+		<title>Project Euler</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Joshua Bee" />
+		<meta name="description" content="Project Euler Collection" />
+		<!-- Let browser know website is optimized for mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" type="image/png" href="../images/logos/logo-192.png" />
+		<link rel="apple-touch-icon" href="../images/logos/logo-192.png">
+		<link rel="canonical" href="https://euler.joshuabee.dev/11/" />
+
+		<!-- Progressive Web App -->
+		<meta name="theme-color" content="#FFAA1C" />
+		<link rel="manifest" href="../manifest.json" />
+
+		<!-- Settings -->
+		<link href="../styles/1-settings/color.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- Generic -->
+		<link href="../styles/3-generic/reset.css" rel="stylesheet" />
+
+		<!-- Elements -->
+		<link href="../styles/4-elements/body.css" rel="stylesheet" />
+		<link href="../styles/4-elements/iframe.css" rel="stylesheet" />
+		<link href="../styles/4-elements/section.css" rel="stylesheet" />
+		
+		<!-- Components -->
+		<link href="../styles/6-components/button.css" rel="stylesheet" />
+		<link href="../styles/6-components/content.css" rel="stylesheet" />
+		<link href="../styles/6-components/footer.css" rel="stylesheet" />
+		<link href="../styles/6-components/header.css" rel="stylesheet" />
+		
+		<!-- Components -->
+		<link href="../styles/7-utilities/color.css" rel="stylesheet" />
+		<link href="../styles/7-utilities/text-alignment.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<div class="content">
+			<div class="content__left">
+				<a href="https://euler.joshuabee.dev/" class="button icon-text-button">
+					<img src="../images/icons/arrow-back-24.svg" alt="" class="button__icon" />
+					<span class="button__text">Back</span>
+				</a><!-- button -->
+			</div><!-- left -->
+
+			<div class="content__center">
+				<header class="header">
+					<h1 class="header__title">Problem 11: Largest product in a grid</h1>
+					<div class="header__subtitle">
+						<p>In the 20×20 grid below, four numbers along a diagonal line have been marked in red.</p>
+
+						<div class="u-text-center">
+							<p>08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08</p>
+							<p>49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00</p>
+							<p>81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65</p>
+							<p>52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91</p>
+							<p>22 31 16 71 51 67 63 89 41 92 36 54 22 40 40 28 66 33 13 80</p>
+							<p>24 47 32 60 99 03 45 02 44 75 33 53 78 36 84 20 35 17 12 50</p>
+							<p>32 98 81 28 64 23 67 10 <span class="u-color-error">26</span> 38 40 67 59 54 70 66 18 38 64 70</p>
+							<p>67 26 20 68 02 62 12 20 95 <span class="u-color-error">63</span> 94 39 63 08 40 91 66 49 94 21</p>
+							<p>24 55 58 05 66 73 99 26 97 17 <span class="u-color-error">78</span> 78 96 83 14 88 34 89 63 72</p>
+							<p>21 36 23 09 75 00 76 44 20 45 35 <span class="u-color-error">14</span> 00 61 33 97 34 31 33 95</p>
+							<p>78 17 53 28 22 75 31 67 15 94 03 80 04 62 16 14 09 53 56 92</p>
+							<p>16 39 05 42 96 35 31 47 55 58 88 24 00 17 54 24 36 29 85 57</p>
+							<p>86 56 00 48 35 71 89 07 05 44 44 37 44 60 21 58 51 54 17 58</p>
+							<p>19 80 81 68 05 94 47 69 28 73 92 13 86 52 17 77 04 89 55 40</p>
+							<p>04 52 08 83 97 35 99 16 07 97 57 32 16 26 26 79 33 27 98 66</p>
+							<p>88 36 68 87 57 62 20 72 03 46 33 67 46 55 12 32 63 93 53 69</p>
+							<p>04 42 16 73 38 25 39 11 24 94 72 18 08 46 29 32 40 62 76 36</p>
+							<p>20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16</p>
+							<p>20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54</p>
+							<p>01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48</p>
+						</div>
+
+						<p>The product of these numbers is 26 × 63 × 78 × 14 = 1788696.</p>
+
+						<p>What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?</p>
+					</div>
+				</header>
+				
+				<main>
+					<section id="javascript">
+						<h2 class="section__title">JavaScript</h2>
+						<p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="js,result" data-user="JoshuaBee" data-slug-hash="XWKmMWm" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Problem 11">
+							<span>See the Pen <a href="https://codepen.io/JoshuaBee/pen/XWKmMWm">Problem 11</a> by Joshua Bee (<a href="https://codepen.io/JoshuaBee">@JoshuaBee</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+						</p>
+						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+					</section>
+
+				</main>
+			</div>
+			
+			<div class="content__right"></div>
+		</div><!-- center -->
+
+		<footer class="footer">
+			<a href="https://joshuabee.dev/" target="_blank" rel="noopener noreferrer" class="footer__branding" itemscope itemtype="https://schema.org/WebSite">
+				<picture>
+					<source srcset="../images/logos/company-logo-192.svg" type="image/svg+xml">
+					<img src="../images/logos/company-logo-192.png" class="footer__logo" alt="Company Logo" />
+				</picture>
+				<span class="footer__title">Joshua<br />Bee</span>
+			</a>
+		</footer>
+	</body>
+</html>
