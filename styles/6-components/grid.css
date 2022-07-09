@@ -37,12 +37,12 @@
 	overflow: visible;
 }
 
-.grid__item a {
+.grid__item-content {
 	display: flex;
 	align-items: center;
 }
 
-.grid__item a::before {
+.grid__item-content::before {
 	background-color: #000;
 	background-color: var(--color-secondary);
 	opacity: 0;
@@ -59,11 +59,11 @@
 	backface-visibility: hidden;
 }
 
-.grid__item a:hover::before {
+.grid__item-content:hover::before {
 	opacity: 0.2;
 }
 
-.grid__item a:active::before {
+.grid__item-content:active::before {
 	opacity: 0.4;
 }
 
