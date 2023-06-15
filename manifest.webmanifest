@@ -1,0 +1,33 @@
+{
+  "background_color": "#FFA914",
+  "description": "Collection of Project Euler puzzles",
+  "display": "standalone",
+  "id": "/",
+  "icons": [
+    {
+      "src": "images/logos/logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logos/logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "name": "Project Euler",
+  "screenshots" : [
+    {
+      "src": "images/screenshots/screenshot1.webp",
+      "sizes": "3360x1664",
+      "type": "image/webp",
+      "platform": "wide",
+      "label": "Homescreen of Project Euler"
+    }
+  ],
+  "short_name": "PE",
+  "start_url": "/",
+  "theme_color": "#FFA914"
+}

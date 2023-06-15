@@ -1,7 +1,7 @@
 .content {
 	display: grid;
 	grid-template-columns: calc(5% - 1vw) 90vw calc(5% - 1vw);
-	grid-gap: 1vw;
+	gap: 1vw;
 
 	position: relative;
 	min-height: 100%;
